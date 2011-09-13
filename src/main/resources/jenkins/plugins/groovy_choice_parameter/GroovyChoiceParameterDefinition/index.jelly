@@ -6,7 +6,7 @@
             <j:choose>
             	<j:when test="${it.type eq 'PT_SINGLE_SELECT'}">
             	    <input type="hidden" name="name" value="${it.name}" />
-            		<select name="value" size="5" width="200px">
+            		<select name="value" size="10" width="200px">
             			<j:forEach var="value" items="${it.value}">
             			     <j:choose>
             			         <j:when test="${it.defaultValueMap[value] eq true}">
@@ -21,7 +21,7 @@
             	</j:when>
             	<j:when test="${it.type eq 'PT_MULTI_SELECT'}">
             	    <input type="hidden" name="name" value="${it.name}" />
-            		<select name="value" size="5" multiple="multiple" width="200px">
+            		<select name="value" size="10" multiple="multiple" width="200px">
             		  <j:forEach var="value" items="${it.value}">
                 			<j:choose>
                                  <j:when test="${it.defaultValueMap[value] eq true}">
