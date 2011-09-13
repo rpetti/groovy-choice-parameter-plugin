@@ -1,0 +1,1 @@
+A build parameter plugin for Jenkins who's choices are configurable by a groovy script.
